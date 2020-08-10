@@ -1,0 +1,23 @@
+1.
+	cd /dev/
+	cd ../../home
+	cd ~
+	cd ..
+2.
+	echo 12345 > file1
+	12345 > file1
+	echo > file1
+	touch file1
+
+	vi file1
+	vim file2
+	nano file3
+
+	cp file1 test1
+	cp file2 test2
+	mv test1 /home/vera/folder_1
+	mv test2 /home/vera/folder_2
+
+	ls -l
+	rm -rf
+
