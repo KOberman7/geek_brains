@@ -1,0 +1,23 @@
+1.
+sudo useradd geek
+sudo userdel geek
+sudo adduser geek
+
+2.
+sudo groupadd vera1
+sudo addgroup vera2
+
+sudo usermod -a -G vera1 vera
+sudo usermod -a -G vera2 vera
+
+sudo usermod vera1 geek
+sudo usermod vera2 geek
+
+sudo gpasswd -d vera vera1
+sudo gpasswd -d vera vera2
+
+3.
+
+sudo usermod -aG sudo test
+sudo nano /etc/sudoers
+	vera ALL=(ALL)NOPASSWD:/usr/bin/apt
