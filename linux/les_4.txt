@@ -1,0 +1,9 @@
+1.
+echo > file_one
+cd /etc/
+ls -lah > file_one
+
+2.
+cat file_one | cut -c 1-10 > file__1
+cat file__1 | uniq
+sort file__1
