@@ -1,0 +1,12 @@
+1.
+touch text
+touch script.sh
+	sed -i '/^$/d' text
+	tr -d [:upper:]
+
+4.
+cd /var/log/
+grep -w "Aug 27" syslog
+
+5.
+echo '/usr/sbin/shutdown -r now' | at 03:00 AM today
