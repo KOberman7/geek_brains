@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //1
+    function getPrimes(max) {
+        var sieve = [], i, j, primes = [];
+        for (i = 2; i <= max; ++i) {
+            if (!sieve[i]) {
+                primes.push(i);
+                for (j = i << 1; j <= max; j += i) {
+                    sieve[j] = true;
+                }
+            }
+        }
+        return primes;
+    }
+    console.log(getPrimes(100));
+
+    //2
+    const basketItems = ['Телевизор', 'Тостер', 'Утюг'];
+    const ItemsCost = [['Телевизор', 100], ['Тостер', 50], ['Утюг', 250]];
+
+    const itemPrice = (item, array) => {
+        const items = [];
+        const price = [];
+
+        for (let i = 0; i < array.lenght; i++) {
+            items.push(array[i][0]);
+            price.push(array[i][1]);
+        }
+
+        return price[items.indexOf(item)];
+    }
+
+    const countBasketPrice = (basketArr, costArr) => {
+        let totalCost = 0;
+        for (let i = 0; i < basketArr.length; i++) {
+            totalCost += itemPrice(basketArr[i], costArr);
+        }
+        return totalCost;
+    };
+    console.log('Вывод полной стоимости корзины: ' + countBasketPrice(basketItems, ItemsCost));
+
+</script>
+
+</html>
