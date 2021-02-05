@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+</body>
+<script>
+    //1
+    let numObj = {};
+    function fromNumToObj(num) {
+        if (num < 10) {
+            numObj['единицы'] = num
+            console.log(numObj);
+        }
+        else if (num > 9 & num < 100) {
+            let des = Math.trunc(num / 10)
+            let ed = num % 10
+            //console.log(ed, sot)
+            numObj['единицы'] = ed
+            numObj['десятки'] = des
+            console.log(numObj);
+        }
+        else if (num > 99 & num < 1000) {
+            let des = Math.trunc(num / 10)
+            des = des % 10
+            let ed = num % 10
+            let sot = Math.trunc(num / 100)
+            //console.log(ed, des, sot);
+            numObj['единицы'] = ed
+            numObj['десятки'] = des
+            numObj['сотни'] = sot
+            console.log(numObj);
+        }
+        else {
+            console.log('Число находится вне диапазона');
+        }
+    }
+
+    let num = 1;
+    num = 32;
+    num = 514;
+    //num = 1000;
+    console.log(num);
+    console.log(fromNumToObj(num));
+
+    //2
+    const basketItems = ['Телевизор', 'Тостер', 'Утюг'];
+    //const ItemsCost = [['Телевизор', 100], ['Тостер', 50], ['Утюг', 250]];
+    const itemsCost = {
+        'Телевизор': 100,
+        'Тостер': 50,
+        'Утюг': 250,
+    };
+
+//C пунктом ООП не смогла справиться :с
+</script>
+
+</html>
