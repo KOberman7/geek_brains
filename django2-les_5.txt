@@ -1,0 +1,49 @@
+ 1  apt install mc
+    2  mcedit /etc/postgresql/10/main/pg_hba.conf
+    3  mc /etc/postgresql/10/main/pg_hba.conf
+    4  mcedit /etc/postgresql/10/main/pg_hba.conf
+    5  mcedit /etc/postgresql/12/main/pg_hba.conf
+    6  ~systemctl testart postgresql
+    7  ~systemtctl testart postgresql
+    8  systemctl restart postgresql
+    9  psql -U postgresql
+   10  psql -U postgres
+   11  cd /var/www/html
+   12  ls
+   13  cd
+   14  useradd -g www-data -m django
+   15  cd/home/django
+   16  cd home/gjango
+   17  cd home/django
+   18  cd /home/django
+   19  g clone git@github.com:KOberman7/geekshop.git
+   20  cd geekshop
+   21  ls
+   22  cd geekshop
+   23  ls
+   24  python3 -m venv env
+   25  source env/bin/activate
+   26  pip3 instal -r requirements.txt
+   27  pip3 install -r requirements.txt
+   28  pip3 install gunicorn
+   29  pip3 install bdist_whee
+   30  pip3 install wheel
+   31  pip3 install gunicorn
+   32  python manage.py migrate
+   33  git pull master
+   34  git pull
+   35  python manage.py migrate
+   36  python manage.py fill_db
+   37  python manage.py runserver
+   38  python manage.py runserver 0.0.0.0:8000
+   39  chown -R django /home/django/geekshop
+   40  mcedit /etc/systemd/system/gunicorn.service
+   41  systemctl enable gumicorn
+   42  systemctl enable gunicorn
+   43  systemctl start gunicorn
+   44  systemctl status gunicorn
+   45  mcedit /etc/nginx/sites-available/geekshop
+   46  ln -s /etc/nginx/sites-available/geekshop /etc/nginx/sites-enabled
+   47  mc
+   48* /etc/nginx
+   49  history
